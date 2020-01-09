@@ -9,7 +9,7 @@ a:hover{color:black !important;}
 .navbar-nav li a {
 	color: black !important;
 }
-.active, .navbar-nav a:hover {
+header .active, header .navbar-nav a:hover {
 	color: #f38820 !important;
 }
 .en, .pt a {
@@ -223,12 +223,14 @@ a:hover{color:black !important;}
         display: inline-block;
     }
     .Actualidad span {
-        float:right;
+        float:right;cursor: pointer;
     }
+    
     /**********blog************/
+    
     .sidebar .form-control {
         margin: 0;
-        max-width: 240px;
+        max-width: 100%;
         border-right: 0;
         border-radius: 0;
         margin-bottom: 0;
@@ -240,6 +242,9 @@ a:hover{color:black !important;}
         min-height: 45px;
         text-transform: none;
         font-weight: 400;
+    }
+    .recent {
+        margin: 20px 0px 15px;
     }
     .sidebar .btn.btn-primary {
         padding: 0;
@@ -282,11 +287,15 @@ a:hover{color:black !important;}
     .w-100.justify-content-between {
         margin-bottom: 30px;
     }
+    .blog-meta.big-meta.col-md-12 {
+        margin: 20px 0;
+    }
     /***************tabpanel************/
     #tabpanel {
         display: flex;
     }
-    .tab-content{padding: 30px;
+    .tab-content{padding: 40px; background-image: url("../images/tab-img.png");
+        background-size: cover;min-height:560px;position:relative;margin-top: 7%;
     }
     .tab-img img {
         width: 100%;
@@ -297,18 +306,44 @@ a:hover{color:black !important;}
     #tabpanel .nav.nav-pills.brand-pills.nav-stacked {
         display: block;
     }
-    #tab1 {
+    .sv-tab-panel {
         background: white;
         padding: 30px;
+        color: black;
+        position: absolute;
+        bottom: 42px;
+        max-width: 80%;
     }
-    #pag2 {
-        background-image: url("../images/tab-img.png");
-        background-size: cover;
+   
+    .Actualidad {
+        width: 100%;
     }
 
 
-
-
+    #tabpanel small {
+        font-size: 12px;
+        color: gray;
+        display:inherit;
+        width: 100%;line-height:27px;
+    }
+    #tabpanel b {
+        float: left;
+        background: #efefef;
+        border-radius: 50%;
+        padding: 13px;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        font-size: 23px;
+        font-weight: normal;margin-right:20px;
+    }
+    #tabpanel span {
+        font-weight: bold;font-size:15px;
+    }
+    #tabpanel a:hover b {
+        background: #f38820;
+        color: white;
+    }
     .vertical-tabs{
         font-size:15px;
         padding:10px;
@@ -316,17 +351,21 @@ a:hover{color:black !important;}
     }
      .vertical-tabs .nav-tabs .nav-link{
         border-radius: 0;
-        background:#c10101;
-        text-align:center;
+        text-align:left;
         font-size: 16px;
-        border:1px solid #424242;
-        color:#fff;
+        border:0;
+        color:black;
         height:100%;
-        width: 100%;
+        width: 100%;padding:10px;
     }
-     .vertical-tabs .nav-tabs .nav-link.active{
-        background-color:#700000!important;
-        color:#fff;
+    
+    .vertical-tabs {
+        display: inline-block;
+        padding: 0;
+    }
+    
+     .vertical-tabs .nav-tabs .nav-link.active:hover{
+        background-color:#efefef !important;
     }
      .vertical-tabs .tab-content>.active{
         background:#fff;
@@ -337,13 +376,14 @@ a:hover{color:black !important;}
       
         display:flex;
         float:left;
-        margin-right:20px;
-        padding-right:15px;
     }
      .vertical-tabs .sv-tab-panel{
         background:#fff;
         height:274px;
         padding-top:10px;
+    }
+    #tabpanel  ul .nav-item {
+        margin-top: 30px !important;
     }
 
 
