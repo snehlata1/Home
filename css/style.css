@@ -385,6 +385,15 @@ header .active, header .navbar-nav a:hover {
     #tabpanel  ul .nav-item {
         margin-top: 30px !important;
     }
+    /**************form***************/
+    .form-heading h2 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    .e-mail {
+        border: 0px;
+        border-bottom: 1px solid gray;max-width:150px;
+    }
 
 
     
