@@ -24,14 +24,7 @@ header .active, header .navbar-nav a:hover {
 .search {
 	text-align: right;
 }
-.navbar-toggler-icon {
-	background-image: url("../images/menu-button.png") !important;
-}
-.navbar-toggler {
-	display: block !important;
-	position: absolute;
-	right: 0;
-}
+
 .navbar-collapse {
 	flex-grow: inherit !important;
 }
@@ -78,7 +71,29 @@ header .active, header .navbar-nav a:hover {
     }
     .outer {
         display: inherit;
-        width: 100%;
+        width: 100%;position:relative;
+    }
+    .outer select {
+        border: 0;background:#f4f1f1;-moz-appearance: none;
+        -webkit-appearance: none;color: #f38820;
+    }
+    .hide-show {
+        position: absolute;
+        right: 0;
+        top: 13px;
+    }
+    .hide-show a {
+        color: black;
+    }
+    .outer::after {
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f0d9";
+        color: #f38820;
+        position: absolute;
+        right: 55px;
+        top: 10px;
+        font-size: 20px;
     }
     /***********banner***********/
     #banner {
@@ -265,7 +280,11 @@ header .active, header .navbar-nav a:hover {
         margin-left: 0;
     }
     .blog-meta.big-meta h4 a {
-        color: black;
+        color: black;text-decoration: none;
+    }
+    .blog-meta.big-meta h4 a:hover{color: #f38820 !important;}
+    .blog-meta.big-meta.col-md-12 h4 {
+        margin: 15px 0px;
     }
     .bg-aqua a, p {
         color: #494949;
@@ -392,7 +411,7 @@ header .active, header .navbar-nav a:hover {
     }
    
     .Actualidad {
-        width: 100%;
+        width: 100%;max-width: 98%;
     }
 
 
@@ -461,6 +480,12 @@ header .active, header .navbar-nav a:hover {
     #tabpanel  ul .nav-item {
         margin-top: 30px !important;
     }
+    .list-group {
+        width: 100%;
+    }
+    .blog-list-widget {
+        width: 100%;
+    }
     /**************form***************/
     .form-heading h2 {
         font-size: 30px;
@@ -491,31 +516,41 @@ header .active, header .navbar-nav a:hover {
     }
     .col-md-12.quiero h1 {
         max-width: 60%;
-        margin: 0 auto;
+        margin: 0 auto 0 11%;
         font-size: 30px;
         text-align: center;
         font-weight: 300;
     }
     .quiero-form {
         position: absolute;
-        right: -45px;top: 66px;
+        right: 17px;
+        top: 66px;
     }
     .quiero-form #email {
         border: 0px;
         border-bottom: 1px solid rgba(0,0,0,.1);width:35%;background: transparent;
     }
     #subscribe {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 23px;
         background: #f38820;
-        border: #f38820;
-        border-radius: 4px;
-        padding: 9px 32px;
-        color: white;
-        font-size: 14px;
+        padding: 14px 32px;
+        color: white !important;
         text-transform: uppercase;
-        letter-spacing: 1px;
+        border-radius: 5px;
+        border: 0;
+        margin-left: 20px;
+        position: relative;
+        top: -12px;
     }
     .three-box h1 {
         font-size: 30px;
+    }
+  
+    #subscribe:hover{
+        background-color: #efefef;
+        color: black;
     }
     /****************las-section******************/
     .las-mas {
@@ -534,10 +569,10 @@ header .active, header .navbar-nav a:hover {
         border-top: 2px solid #f38820;
         position: absolute;
         content: "";
-        width: 20px;
+        width: 20px;top: -5px;
     }
     .negative-inner {
-        width: 70%;
+        width: 80%;
         float: left;
     }
     .negative-inner p {
@@ -594,11 +629,11 @@ header .active, header .navbar-nav a:hover {
 
 
 	.lorem-form {
-	margin-left: 92px;
+	
 	font-size: 15px;
 	line-height: 25px;
 	color: #616161;
-	font-weight: 500;
+	font-weight: 500;display: inline-block;margin-bottom: 20px;
 }
 .read {
 	margin-left: 85px !important;
@@ -620,7 +655,7 @@ header .active, header .navbar-nav a:hover {
 	margin-bottom: 65px;
 }
 
-.spot-catagerious h5 {
+.catagerias h5 {
 	font-size: 22px;
 	font-weight: 700;
 	line-height: 33px;
@@ -628,11 +663,14 @@ header .active, header .navbar-nav a:hover {
 #cat-2 {
 	float: left;
 	width: 48%;
-	margin: 1%;
+	margin: 1%;font-size:12px;
+}
+.form-group #cat-1 {
+	font-size: 13px;
 }
 
-.spot-catagerious img {
-	margin-top: 20px;
+.catagerias img {
+	margin-top: 20px;width:100%;
 }
 
 .extra-5 {
@@ -651,7 +689,7 @@ header .active, header .navbar-nav a:hover {
 	padding: 5px 0px;
 	 
 }
-.lorem-form input{font-size:14px;}
+.lorem-form input{font-size:14px;width:auto;float: left;margin: 10px 10px 0 0;}
 .submit-btn {
 	font-size: 15px;
 	font-weight: 600;
@@ -661,6 +699,24 @@ header .active, header .navbar-nav a:hover {
 	color: white !important;
 	text-transform: uppercase;
 	border-radius: 5px;
+}
+.inner-box-las {
+	margin-top: 30px;
+}
+.lorem-form p {
+	float: left;
+	max-width: 90%;font-size: 14px;
+}
+.two-heading {
+	margin: 20px 0px;
+}
+.las-mas .Actualidad span {
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.submit-btn:hover{
+    background-color: #efefef;
+    color: black;
 }
     /******************footer***********************/
     footer {
@@ -704,9 +760,7 @@ header .active, header .navbar-nav a:hover {
     }
     
     .button:hover{color:#f38820; border: 1px solid #f38820;}
-    .text-box {
-        padding-left: 0px;
-    }
+    
     
     .text-box li, .footer-text li {
         list-style: none;
@@ -743,5 +797,30 @@ header .active, header .navbar-nav a:hover {
         text-align: center;
         margin-top: 30px;
     }
-
-    
+/****************media quary**************/
+@media screen and (max-width:1199px) {
+    .col-md-12.quiero h1 {
+        max-width: 70%;
+        margin: 0 auto 0 6%;width:100%;
+    }
+    .quiero-form {
+        right: -71px;
+    }
+    .negative-inner {
+        max-width: 77%;
+        width:100%;
+    }
+    .lorem-form p {
+        max-width: 86%;width:100%;
+    }
+}
+@media screen and (max-width:1024px) {
+.container {
+	max-width: 95% !important;
+}
+}
+@media screen and (max-width:991px) {
+.navbar-brand img {
+	max-width: 200px;
+}
+}

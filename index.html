@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" /> 
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css" /> 
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -51,11 +53,22 @@
             </div>
           </form>
    
-    <div class="post-switcher">
+    <!--<div class="post-switcher">
         <div class="en">EN<span>▼</span></div>
         <div class="pt" style="display: none;"><a href="#">PT</a></div>
         
-        </div>
+        </div>-->
+        <select data-placeholder="Choose a Language...">
+            <option value="AF">PT</option>
+            <option value="SQ">EN</option>
+            <option value="AR">Arabic</option>
+            <option value="HY">Armenian</option>
+            <option value="EU">Basque</option>
+           
+          </select>
+          <div class="hide-show">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </div>
         </div>
       </nav>
       
@@ -376,27 +389,28 @@
             </div>
             
         </div>
-            <div class="three-box">
+        <div class="row">
+            <div class="col-md-12 three-box">
                 <div class="text-box">
                     <h1>Portafolios Inteligentes </h1>
                 </div>
                 <div class="three-boxes">
-                    <div class="col-md-4 first-box">
+                    <div class="col-md-6 first-box">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/B3MDJsggfDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
                     </div>
-                    <div class="col-md-4 second-box">
+                    <div class="col-md-3 second-box">
                         <div class="inner">
                         <h3>Banner Spot  </h3>
                         </div>
                     </div>
-                    <div class="col-md-4 third-box">
+                    <div class="col-md-3 third-box">
                         <div class="inner">
                             <h3>Banner Spot  </h3>
                             </div>
                     </div>
                 </div>
-               
+               </div>
             </div>
         </div>
     </section>
@@ -473,9 +487,9 @@
             <div class="col-md-3 right-box">
                 <div class="catagerias">
                     <h5> Catagerias </h5>
-                    <div class="catagerias-group">
+                    <div class="form-group">
                        
-                        <select class="catagerias-control" id="cat-1">
+                        <select class="form-control" id="cat-1">
                           <option>Select catagerious </option>
                           <option>2</option>
                           <option>3</option>
@@ -486,15 +500,16 @@
                       <h5> Cotización  </h5>
                       <h6> PRICES AND GRAPH</h6>
 
-                      <div class="catagerias-groups">
+                      <div class="form-group">
                         
-                        <select class="catagerias-control" id="cat-2">
+                        <select class="form-control" id="cat-2">
+                           
                           <option>Candles </option>
                           <option>2</option>
                           <option>3</option>
                           <option>4</option>
                         </select>
-                        <select class="catagerias-control" id="cat-2">
+                        <select class="form-control" id="cat-2">
                             <option>15 minute </option>
                             <option>2</option>
                             <option>3</option>
@@ -507,9 +522,9 @@
                           <h6>Impulso del crédito: Señales de   </h6>
                       </div>
                       <form class="lorem-form">
-                        <input type="radio" name="ipsum" value="lorem">  Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>
-                        <input type="radio" name="ipsum" value="lorem">  Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>
-                        <input type="radio" name="ipsum" value="lorem">  Lorem Ipsum is simply dummy text of the printing and typesetting industry<br>  
+                        <input type="radio" name="ipsum" value="lorem"> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry</p><br>
+                        <input type="radio" name="ipsum" value="lorem"><p>  Lorem Ipsum is simply dummy text of the printing and typesetting industry</p><br>
+                        <input type="radio" name="ipsum" value="lorem"> <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry</p><br>  
                      
                       </form>
                       <a class="submit-btn"> submit </a>
