@@ -28,9 +28,7 @@ header .active, header .navbar-nav a:hover {
 .navbar-collapse {
 	flex-grow: inherit !important;
 }
-#collapsibleNavbar {
-    display: block;
-}
+
 .logo img {
 	width: 100%;
 }
@@ -245,7 +243,10 @@ header .active, header .navbar-nav a:hover {
     .Actualidad span {
         float:right;cursor: pointer;
     }
-    
+    .text-box {
+        display: inline-block;
+        width: 100%;
+    }
     /**********blog************/
     
     .sidebar .form-control {
@@ -797,8 +798,17 @@ header .active, header .navbar-nav a:hover {
         text-align: center;
         margin-top: 30px;
     }
+    .text-box h1 {
+	font-size: 30px;
+}
 /****************media quary**************/
 @media screen and (max-width:1199px) {
+    .navbar-brand img {
+        width: 200px;
+    }
+    .outer::after {
+        right: 43px;
+    }
     .col-md-12.quiero h1 {
         max-width: 70%;
         margin: 0 auto 0 6%;width:100%;
@@ -822,5 +832,176 @@ header .active, header .navbar-nav a:hover {
 @media screen and (max-width:991px) {
 .navbar-brand img {
 	max-width: 200px;
+}
+.banner-inner h1 {
+	max-width: 80%;
+}
+.banner-outer a {
+	font-size: 11px;
+}
+#tabpanel b {
+	margin-right: 10px;
+}
+.col-md-12.quiero h1 {
+	font-size: 25px;
+}
+.quiero-form {
+	right: -48px;
+}
+.quiero-form #email {
+	width: 30%;
+}
+#subscribe {
+	padding: 9px 32px;margin-left: 10px;
+}
+
+}
+@media screen and (max-width:767px) {
+.banner-1 {
+	width: 100%;
+}
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("../images/menu-button.png") !important;
+}
+.collapse {
+	display: block;
+}
+.outer {
+	display: inherit;
+	width:30%;
+	position: relative;
+}
+#tabpanel {
+	display: block;margin-bottom: 20px;
+}
+.col-md-6.first-box {
+	margin-top: 20px;
+}
+.sv-tab-panel {
+	max-width: 100%;
+	width: 100%;
+	position: initial;
+}
+.col-md-12.quiero h1 {
+	max-width: 100%;
+	margin:0;
+	width: 100%;
+}
+.quiero-form {
+	right: 0;
+	position: initial;
+	margin: 30px 0px;
+	top: 0;
+}
+.quiero {
+	text-align: center;
+}
+.lorem-form p {
+	max-width: 95%;
+	width: 100%;
+}
+.lorem-form {
+	width: 100%;
+}
+.negative-inner {
+	max-width: 100%;
+	width: 100%;
+}
+.negative-inner span {
+	width: 100%;
+}
+.catagerias {
+	margin-top: 20px;
+}
+#subscribe {
+	padding: 9px 32px;
+	margin-left: 10px;
+	top: 0;
+	margin-top: 20px;
+}
+.quiero-form #email {
+	width: 100%;
+	text-align: center;max-width:70%;
+}
+#cat-2 {
+	float: left;
+	width: 100%;
+	margin: 0 0 30px;
+	font-size: 12px;
+}
+.inner {
+	height: 100%;
+	float: left;
+	min-height: 200px;
+	padding: 20px;
+	width: 100%;
+}
+.col-md-3.second-box {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.tab-content {
+	min-height: 335px;
+}
+.ellen {
+	width: 100%;
+	display: block;
+}
+.ellen-icon {
+	float: left;
+	width: 100%;
+}
+.sidebar .form-control {
+	width: 100% !important;
+}
+.form-group {
+	display: block;
+	width: 100%;
+}
+}
+@media screen and (max-width:599px) {
+.blog-meta.big-meta.col-md-12 h4 {
+	font-size: 18px;
+}
+.col-md-12.quiero h1 {
+	font-size: 20px;
+}
+.outer {
+	display: none;
+}
+.lorem-form input {
+	margin: 10px 5px 0 0;
+}
+.text-box h1 {
+	font-size: 25px;
+}
+.navbar.navbar-expand-md.bg-dark.navbar-dark {
+	padding: 0;text-align: center;
+}
+
+}
+@media screen and (max-width:375px) {
+.lorem-form p {
+	max-width: 93%;
+	width: 100%;
+}
+.sv-tab-panel h3 {
+	font-size: 19px;
+	padding: ;
+}
+.tab-content {
+	padding: 20px;
+}
+.navbar-brand {
+	width: 100%;
+	text-align: center;
+	margin: 0px;
+}
+.navbar-toggler {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
 }
 }
